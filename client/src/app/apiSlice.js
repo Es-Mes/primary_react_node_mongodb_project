@@ -2,7 +2,8 @@ import{createApi,fetchBaseQuery}from "@reduxjs/toolkit/query/react"
 import {setToken} from "../fetures/auth/authSlice"
 
 const baseQuery=fetchBaseQuery({
-    baseUrl:"http://localhost:1234",
+   // baseUrl:"http://localhost:1234",
+   baseUrl: "https://primary-react-node-mongodb-project.onrender.com",
     credentials:"include",
     prepareHeaders:(headers,{getState})=>{
         const token=getState().auth.token
